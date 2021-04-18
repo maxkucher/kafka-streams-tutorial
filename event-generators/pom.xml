@@ -28,10 +28,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven.compiler.plugin.version}</version>
-        <configuration>
+        <com.maxkucher.device.api.configuration>
           <source>${maven.compiler.source}</source>
           <target>${maven.compiler.target}</target>
-        </configuration>
+        </com.maxkucher.device.api.configuration>
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -42,7 +42,7 @@
             <goals>
               <goal>single</goal>
             </goals>
-            <configuration>
+            <com.maxkucher.device.api.configuration>
               <descriptorRefs>
                 <descriptorRef>jar-with-dependencies</descriptorRef>
               </descriptorRefs>
@@ -51,7 +51,7 @@
                   <mainClass>com.jesseyates.manning.Generator</mainClass>
                 </manifest>
               </archive>
-            </configuration>
+            </com.maxkucher.device.api.configuration>
           </execution>
         </executions>
       </plugin>

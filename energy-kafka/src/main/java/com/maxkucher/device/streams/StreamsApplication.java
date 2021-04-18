@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutorService;
 public class StreamsApplication extends Application<StreamsConfiguration> {
 
     public static void main(String[] args) throws Exception {
-        new StreamsApplication().run("server", "scaffold/streams-configuration.yaml");
+        new StreamsApplication().run("server", "streams-configuration.yaml");
     }
 
     @Override

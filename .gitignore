@@ -70,7 +70,7 @@ nbbuild/
 dist/
 nbdist/
 nbactions.xml
-nb-configuration.xml
+nb-com.maxkucher.device.api.configuration.xml
 
 ##############################
 ## Visual Studio Code

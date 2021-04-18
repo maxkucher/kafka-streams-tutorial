@@ -21,7 +21,7 @@ public class ApiApplication extends Application<ApplicationConfiguration> {
 
 
     public static void main(String[] args) throws Exception {
-        new ApiApplication().run("server", "scaffold/api-configuration.yaml");
+        new ApiApplication().run("server", "api-configuration.yaml");
     }
 
     @Override
