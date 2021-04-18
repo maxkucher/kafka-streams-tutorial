@@ -1,0 +1,61 @@
+{
+  "namespace": "com.maxkucher.energyresources",
+  "type": "record",
+  "name": "BatteryEvent",
+  "fields": [
+    {
+      "name": "device_id",
+      "type": "string"
+    },
+    {
+      "name": "region",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "charging",
+      "type": "int"
+    },
+    {
+      "name": "charging_source",
+      "type": {
+        "type": "enum",
+        "name": "ChargingSource",
+        "namespace": "com.maxkucher.energyresources",
+        "symbols": ["solar", "utility"]
+      }
+    },
+    {
+      "name": "moduleL_temp",
+      "type": "int"
+    },
+    {
+      "name": "moduleR_temp",
+      "type": "int"
+    },
+    {
+      "name": "processor1_temp",
+      "type": "int"
+    },
+    {
+      "name": "processor2_temp",
+      "type": "int"
+    },
+    {
+      "name": "processor3_temp",
+      "type": "int"
+    },
+    {
+      "name": "processor4_temp",
+      "type": "int"
+    },
+    {
+      "name": "inverter_state",
+      "type": "int"
+    },
+    {
+      "name": "SoC_regulator",
+      "type": "float"
+    }
+  ]
+}

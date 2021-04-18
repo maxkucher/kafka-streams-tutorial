@@ -1,7 +1,0 @@
-bootstrapServers: localhost:29092
-retries: 0
-lingerMilliseconds: 1
-keySerializer: org.apache.kafka.common.serialization.StringSerializer
-valueSerializer: io.confluent.kafka.serializers.KafkaAvroSerializer
-chargingEventsTopicName: charging-event
-schemaRegistryUrl: http://localhost:8090
